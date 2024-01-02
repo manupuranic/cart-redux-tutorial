@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  showCart: false,
   cartItems: [],
 };
 
@@ -30,15 +29,6 @@ const cartSlice = createSlice({
         const updatedCart = state.cartItems.filter((prod) => prod.id !== id);
         state.cartItems = updatedCart;
       }
-    },
-    toggleCart(state) {
-      state.showCart = !state.showCart;
-    },
-    openCart(state) {
-      state.showCart = true;
-    },
-    closeCart(state) {
-      state.showCart = false;
     },
   },
 });

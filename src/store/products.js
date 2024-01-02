@@ -4,9 +4,15 @@ const initialState = {
   products: [
     {
       id: "1",
-      title: "Test",
-      price: 6,
-      description: "This is a first product - amazing!",
+      title: "First Book",
+      price: 8,
+      description: "This is a first book - amazing!",
+    },
+    {
+      id: "2",
+      title: "Second Book",
+      price: 12,
+      description: "This is a second book - amazing!",
     },
   ],
 };
